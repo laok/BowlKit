@@ -1,3 +1,9 @@
 [submodule "Submodules/MKNetworkKit"]
 	path = Submodules/MKNetworkKit
 	url = https://github.com/laok/MKNetworkKit.git
+[submodule "Submodules/sskeychain"]
+	path = Submodules/sskeychain
+	url = https://github.com/soffes/sskeychain.git
+[submodule "Submodules/JSONKit"]
+	path = Submodules/JSONKit
+	url = https://github.com/laok/JSONKit.git
