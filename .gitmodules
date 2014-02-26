@@ -7,3 +7,9 @@
 [submodule "Submodules/JSONKit"]
 	path = Submodules/JSONKit
 	url = https://github.com/laok/JSONKit.git
+[submodule "Submodules/MMDrawerController"]
+	path = Submodules/MMDrawerController
+	url = https://github.com/laok/MMDrawerController.git
+[submodule "Submodules/SDWebImage"]
+	path = Submodules/SDWebImage
+	url = https://github.com/laok/SDWebImage.git

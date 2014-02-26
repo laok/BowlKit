@@ -7,6 +7,17 @@
 	objects = {
 
 /* Begin PBXAggregateTarget section */
+		5C1409CA18BE27A800C33CCC /* UniversalLib */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 5C1409CD18BE27A800C33CCC /* Build configuration list for PBXAggregateTarget "UniversalLib" */;
+			buildPhases = (
+				5C1409CE18BE27B500C33CCC /* ShellScript */,
+			);
+			dependencies = (
+			);
+			name = UniversalLib;
+			productName = UniversalLib;
+		};
 		5CBECD2E18BCF416002B1E23 /* Framework */ = {
 			isa = PBXAggregateTarget;
 			buildConfigurationList = 5CBECD2F18BCF416002B1E23 /* Build configuration list for PBXAggregateTarget "Framework" */;
@@ -43,7 +54,7 @@
 		5CBECC5018BCEA00002B1E23 /* SSKeychain.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 5CBECC4818BCE973002B1E23 /* SSKeychain.h */; };
 		5CBECC5218BCEA00002B1E23 /* SSKeychainQuery.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 5CBECC4A18BCE973002B1E23 /* SSKeychainQuery.h */; };
 		5CBECC6818BCEAD0002B1E23 /* JSONKit.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 5CBECC5D18BCEA9E002B1E23 /* JSONKit.h */; };
-		5CBECC6918BCEAD9002B1E23 /* JSONKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CBECC5E18BCEA9E002B1E23 /* JSONKit.m */; };
+		5CBECC6918BCEAD9002B1E23 /* JSONKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CBECC5E18BCEA9E002B1E23 /* JSONKit.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		5CBECC6A18BCEAF3002B1E23 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5CBECBC718BCE0C5002B1E23 /* Foundation.framework */; };
 		5CBECC9918BCEC3D002B1E23 /* NSData+MKBase64.h in Headers */ = {isa = PBXBuildFile; fileRef = 5CBECC8118BCEC3D002B1E23 /* NSData+MKBase64.h */; };
 		5CBECC9A18BCEC3D002B1E23 /* NSData+MKBase64.h in Headers */ = {isa = PBXBuildFile; fileRef = 5CBECC8118BCEC3D002B1E23 /* NSData+MKBase64.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -991,6 +1002,7 @@
 				5CBECC6B18BCEB1F002B1E23 /* MKNetworkKit */,
 				5CBECC7418BCEB8A002B1E23 /* BowlKitFramework */,
 				5CBECD2E18BCF416002B1E23 /* Framework */,
+				5C1409CA18BE27A800C33CCC /* UniversalLib */,
 			);
 		};
 /* End PBXProject section */
@@ -1007,6 +1019,19 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		5C1409CE18BE27B500C33CCC /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# define output folder environment variable\nUNIVERSAL_OUTPUTFOLDER=${BUILD_DIR}/${CONFIGURATION}-universal\n\n\n# Step 1. Build Device and Simulator versions\nxcodebuild -target BowlKit ONLY_ACTIVE_ARCH=NO -configuration ${CONFIGURATION} -sdk iphoneos  BUILD_DIR=\"${BUILD_DIR}\" BUILD_ROOT=\"${BUILD_ROOT}\"\nxcodebuild -target BowlKit -configuration ${CONFIGURATION} -sdk iphonesimulator -arch i386 BUILD_DIR=\"${BUILD_DIR}\" BUILD_ROOT=\"${BUILD_ROOT}\"\n\n\n# make sure the output directory exists\nmkdir -p \"${UNIVERSAL_OUTPUTFOLDER}\"\n\n# Step 2. Create universal binary file using lipo\nlipo -create -output \"${UNIVERSAL_OUTPUTFOLDER}/lib${PROJECT_NAME}.a\" \"${BUILD_DIR}/${CONFIGURATION}-iphoneos/lib${PROJECT_NAME}.a\" \"${BUILD_DIR}/${CONFIGURATION}-iphonesimulator/lib${PROJECT_NAME}.a\"\n\n# Last touch. copy the header files. Just for convenience\ncp -R \"${BUILD_DIR}/${CONFIGURATION}-iphoneos/include\" \"${UNIVERSAL_OUTPUTFOLDER}/\"";
+		};
 		5CBECD2D18BCF3ED002B1E23 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -1201,6 +1226,22 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		5C1409CB18BE27A800C33CCC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		5C1409CC18BE27A800C33CCC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 		5CBECBE518BCE0C5002B1E23 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -1567,6 +1608,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		5C1409CD18BE27A800C33CCC /* Build configuration list for PBXAggregateTarget "UniversalLib" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5C1409CB18BE27A800C33CCC /* Debug */,
+				5C1409CC18BE27A800C33CCC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		5CBECBBF18BCE0C5002B1E23 /* Build configuration list for PBXProject "BowlKit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
