@@ -34,16 +34,21 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
-		5C81974418BDF2E800A160FB /* BK500px.h in Headers */ = {isa = PBXBuildFile; fileRef = 5C81974218BDF2E800A160FB /* BK500px.h */; };
-		5C81974518BDF2E800A160FB /* BK500px.h in Headers */ = {isa = PBXBuildFile; fileRef = 5C81974218BDF2E800A160FB /* BK500px.h */; };
+		5C69F89F18BF4071005AF372 /* JSONKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 5CBECC5D18BCEA9E002B1E23 /* JSONKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5C69F8A018BF40C4005AF372 /* BK500px.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 5C81974218BDF2E800A160FB /* BK500px.h */; };
+		5C69F8A118BF40CF005AF372 /* BKQQConnectV2.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 5C81974918BDF2FE00A160FB /* BKQQConnectV2.h */; };
+		5C69F8A218BF40E0005AF372 /* BKQQConnectV2OAuthView.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 5C81974B18BDF2FE00A160FB /* BKQQConnectV2OAuthView.h */; };
+		5C69F8A818BF486F005AF372 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5CBECCCD18BCEDBD002B1E23 /* UIKit.framework */; };
+		5C81974418BDF2E800A160FB /* BK500px.h in Headers */ = {isa = PBXBuildFile; fileRef = 5C81974218BDF2E800A160FB /* BK500px.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5C81974518BDF2E800A160FB /* BK500px.h in Headers */ = {isa = PBXBuildFile; fileRef = 5C81974218BDF2E800A160FB /* BK500px.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5C81974618BDF2E800A160FB /* BK500px.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C81974318BDF2E800A160FB /* BK500px.m */; };
 		5C81974718BDF2E800A160FB /* BK500px.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C81974318BDF2E800A160FB /* BK500px.m */; };
-		5C81974D18BDF2FE00A160FB /* BKQQConnectV2.h in Headers */ = {isa = PBXBuildFile; fileRef = 5C81974918BDF2FE00A160FB /* BKQQConnectV2.h */; };
-		5C81974E18BDF2FE00A160FB /* BKQQConnectV2.h in Headers */ = {isa = PBXBuildFile; fileRef = 5C81974918BDF2FE00A160FB /* BKQQConnectV2.h */; };
+		5C81974D18BDF2FE00A160FB /* BKQQConnectV2.h in Headers */ = {isa = PBXBuildFile; fileRef = 5C81974918BDF2FE00A160FB /* BKQQConnectV2.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5C81974E18BDF2FE00A160FB /* BKQQConnectV2.h in Headers */ = {isa = PBXBuildFile; fileRef = 5C81974918BDF2FE00A160FB /* BKQQConnectV2.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5C81974F18BDF2FE00A160FB /* BKQQConnectV2.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C81974A18BDF2FE00A160FB /* BKQQConnectV2.m */; };
 		5C81975018BDF2FE00A160FB /* BKQQConnectV2.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C81974A18BDF2FE00A160FB /* BKQQConnectV2.m */; };
-		5C81975118BDF2FE00A160FB /* BKQQConnectV2OAuthView.h in Headers */ = {isa = PBXBuildFile; fileRef = 5C81974B18BDF2FE00A160FB /* BKQQConnectV2OAuthView.h */; };
-		5C81975218BDF2FE00A160FB /* BKQQConnectV2OAuthView.h in Headers */ = {isa = PBXBuildFile; fileRef = 5C81974B18BDF2FE00A160FB /* BKQQConnectV2OAuthView.h */; };
+		5C81975118BDF2FE00A160FB /* BKQQConnectV2OAuthView.h in Headers */ = {isa = PBXBuildFile; fileRef = 5C81974B18BDF2FE00A160FB /* BKQQConnectV2OAuthView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5C81975218BDF2FE00A160FB /* BKQQConnectV2OAuthView.h in Headers */ = {isa = PBXBuildFile; fileRef = 5C81974B18BDF2FE00A160FB /* BKQQConnectV2OAuthView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5C81975318BDF2FE00A160FB /* BKQQConnectV2OAuthView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C81974C18BDF2FE00A160FB /* BKQQConnectV2OAuthView.m */; };
 		5C81975418BDF2FE00A160FB /* BKQQConnectV2OAuthView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C81974C18BDF2FE00A160FB /* BKQQConnectV2OAuthView.m */; };
 		5CBECBCF18BCE0C5002B1E23 /* DummyLib.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CBECBCE18BCE0C5002B1E23 /* DummyLib.m */; };
@@ -119,7 +124,7 @@
 		5CBECCF918BCEFC1002B1E23 /* OAToken.h in Headers */ = {isa = PBXBuildFile; fileRef = 5CBECC0B18BCE373002B1E23 /* OAToken.h */; };
 		5CBECCFA18BCEFD9002B1E23 /* Base64Transcoder.h in Headers */ = {isa = PBXBuildFile; fileRef = 5CBECC0618BCE373002B1E23 /* Base64Transcoder.h */; };
 		5CBECCFB18BCEFE4002B1E23 /* BK.h in Headers */ = {isa = PBXBuildFile; fileRef = 5CBECBF618BCE373002B1E23 /* BK.h */; };
-		5CBECCFC18BCEFF4002B1E23 /* BKService.h in Headers */ = {isa = PBXBuildFile; fileRef = 5CBECC1618BCE373002B1E23 /* BKService.h */; };
+		5CBECCFC18BCEFF4002B1E23 /* BKService.h in Headers */ = {isa = PBXBuildFile; fileRef = 5CBECC1618BCE373002B1E23 /* BKService.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5CBECCFD18BCF001002B1E23 /* OAConsumer.h in Headers */ = {isa = PBXBuildFile; fileRef = 5CBECC0718BCE373002B1E23 /* OAConsumer.h */; };
 		5CBECCFE18BCF00F002B1E23 /* NSString+URLEncoding.h in Headers */ = {isa = PBXBuildFile; fileRef = 5CBECC0218BCE373002B1E23 /* NSString+URLEncoding.h */; };
 		5CBECCFF18BCF06F002B1E23 /* NSDictionary+RequestEncoding.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 5CBECC8518BCEC3D002B1E23 /* NSDictionary+RequestEncoding.h */; };
@@ -158,6 +163,12 @@
 		5CBECD2A18BCF39D002B1E23 /* BKService.h in Headers */ = {isa = PBXBuildFile; fileRef = 5CBECC1618BCE373002B1E23 /* BKService.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5CBECD2B18BCF3B1002B1E23 /* OARequestParameter.h in Headers */ = {isa = PBXBuildFile; fileRef = 5CBECC0918BCE373002B1E23 /* OARequestParameter.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5CBECD2C18BCF3B9002B1E23 /* OAConsumer.h in Headers */ = {isa = PBXBuildFile; fileRef = 5CBECC0718BCE373002B1E23 /* OAConsumer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5CE76D3E18BF78410049CEDA /* BKService.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 5CBECC1618BCE373002B1E23 /* BKService.h */; };
+		5CE76D3F18BF786F0049CEDA /* NSDate+RFC1123.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 5CBECC8318BCEC3D002B1E23 /* NSDate+RFC1123.h */; };
+		5CE76D4018BF78750049CEDA /* NSData+MKBase64.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 5CBECC8118BCEC3D002B1E23 /* NSData+MKBase64.h */; };
+		5CE76D4118BF78800049CEDA /* Reachability.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 5CBECC9318BCEC3D002B1E23 /* Reachability.h */; };
+		5CE76D4218BF797C0049CEDA /* BK.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 5CBECBF618BCE373002B1E23 /* BK.h */; };
+		5CE76D4318BF79A50049CEDA /* BKActivityIndicator.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 5CBECBF818BCE373002B1E23 /* BKActivityIndicator.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -241,7 +252,7 @@
 		5CBECC3F18BCE807002B1E23 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
-			dstPath = "include/$(PRODUCT_NAME)";
+			dstPath = include;
 			dstSubfolderSpec = 16;
 			files = (
 				5CBECC5018BCEA00002B1E23 /* SSKeychain.h in CopyFiles */,
@@ -252,9 +263,15 @@
 		5CBECC5718BCEA15002B1E23 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
-			dstPath = "include/$(PRODUCT_NAME)";
+			dstPath = include;
 			dstSubfolderSpec = 16;
 			files = (
+				5CE76D4318BF79A50049CEDA /* BKActivityIndicator.h in CopyFiles */,
+				5CE76D4218BF797C0049CEDA /* BK.h in CopyFiles */,
+				5CE76D3E18BF78410049CEDA /* BKService.h in CopyFiles */,
+				5C69F8A218BF40E0005AF372 /* BKQQConnectV2OAuthView.h in CopyFiles */,
+				5C69F8A118BF40CF005AF372 /* BKQQConnectV2.h in CopyFiles */,
+				5C69F8A018BF40C4005AF372 /* BK500px.h in CopyFiles */,
 				5CBECCF418BCEF6E002B1E23 /* BKConfiguration.h in CopyFiles */,
 				5CBECCF318BCEF64002B1E23 /* DefaultBKConfigurator.h in CopyFiles */,
 				5CBECCF218BCEF58002B1E23 /* NSHTTPCookieStorage+DeleteForURL.h in CopyFiles */,
@@ -269,7 +286,7 @@
 		5CBECC6218BCEAB4002B1E23 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
-			dstPath = "include/$(PRODUCT_NAME)";
+			dstPath = include;
 			dstSubfolderSpec = 16;
 			files = (
 				5CBECC6818BCEAD0002B1E23 /* JSONKit.h in CopyFiles */,
@@ -279,9 +296,12 @@
 		5CBECC6E18BCEB1F002B1E23 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
-			dstPath = "include/$(PRODUCT_NAME)";
+			dstPath = include;
 			dstSubfolderSpec = 16;
 			files = (
+				5CE76D4118BF78800049CEDA /* Reachability.h in CopyFiles */,
+				5CE76D4018BF78750049CEDA /* NSData+MKBase64.h in CopyFiles */,
+				5CE76D3F18BF786F0049CEDA /* NSDate+RFC1123.h in CopyFiles */,
 				5CBECCFF18BCF06F002B1E23 /* NSDictionary+RequestEncoding.h in CopyFiles */,
 				5CBECD0118BCF06F002B1E23 /* NSString+MKNetworkKitAdditions.h in CopyFiles */,
 				5CBECD0318BCF06F002B1E23 /* MKNetworkEngine.h in CopyFiles */,
@@ -439,6 +459,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5C69F8A818BF486F005AF372 /* UIKit.framework in Frameworks */,
 				5CBECD1C18BCF19D002B1E23 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -767,6 +788,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5C69F89F18BF4071005AF372 /* JSONKit.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1615,6 +1637,7 @@
 				5C1409CC18BE27A800C33CCC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5CBECBBF18BCE0C5002B1E23 /* Build configuration list for PBXProject "BowlKit" */ = {
 			isa = XCConfigurationList;

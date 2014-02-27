@@ -8,8 +8,8 @@
 //http://wiki.opensns.qq.com/wiki/%E3%80%90QQ%E7%99%BB%E5%BD%95%E3%80%91%E7%A7%BB%E5%8A%A8%E5%BA%94%E7%94%A8%E6%8E%A5%E5%85%A5
 #import <UIKit/UIKit.h>
 
-//#import "BKService.h"
-#import <BowlKit/BKService.h>
+#import "BKService.h"
+//#import <BowlKit/BKService.h>
 
 
 @interface BKQQConnectV2 : BKService

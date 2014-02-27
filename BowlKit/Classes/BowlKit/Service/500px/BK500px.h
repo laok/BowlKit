@@ -7,10 +7,10 @@
 //
 //https://github.com/500px/api-documentation
 #import <UIKit/UIKit.h>
-//#import "BKOAuthView.h"
-#import <BowlKit/BKOAuthView.h>
-//#import "BKService.h"
-#import <BowlKit/BKService.h>
+#import "BKOAuthView.h"
+//#import <BowlKit/BKOAuthView.h>
+#import "BKService.h"
+//#import <BowlKit/BKService.h>
 
 @interface BK500px : BKService <BKOAuthViewDelegate>
 
