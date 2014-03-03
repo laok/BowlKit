@@ -34,6 +34,7 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
+		5C2DE55818C44BB300F10EA6 /* NSString+URLEncoding.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 5CBECC0218BCE373002B1E23 /* NSString+URLEncoding.h */; };
 		5C69F89F18BF4071005AF372 /* JSONKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 5CBECC5D18BCEA9E002B1E23 /* JSONKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5C69F8A018BF40C4005AF372 /* BK500px.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 5C81974218BDF2E800A160FB /* BK500px.h */; };
 		5C69F8A118BF40CF005AF372 /* BKQQConnectV2.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 5C81974918BDF2FE00A160FB /* BKQQConnectV2.h */; };
@@ -126,7 +127,7 @@
 		5CBECCFB18BCEFE4002B1E23 /* BK.h in Headers */ = {isa = PBXBuildFile; fileRef = 5CBECBF618BCE373002B1E23 /* BK.h */; };
 		5CBECCFC18BCEFF4002B1E23 /* BKService.h in Headers */ = {isa = PBXBuildFile; fileRef = 5CBECC1618BCE373002B1E23 /* BKService.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5CBECCFD18BCF001002B1E23 /* OAConsumer.h in Headers */ = {isa = PBXBuildFile; fileRef = 5CBECC0718BCE373002B1E23 /* OAConsumer.h */; };
-		5CBECCFE18BCF00F002B1E23 /* NSString+URLEncoding.h in Headers */ = {isa = PBXBuildFile; fileRef = 5CBECC0218BCE373002B1E23 /* NSString+URLEncoding.h */; };
+		5CBECCFE18BCF00F002B1E23 /* NSString+URLEncoding.h in Headers */ = {isa = PBXBuildFile; fileRef = 5CBECC0218BCE373002B1E23 /* NSString+URLEncoding.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5CBECCFF18BCF06F002B1E23 /* NSDictionary+RequestEncoding.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 5CBECC8518BCEC3D002B1E23 /* NSDictionary+RequestEncoding.h */; };
 		5CBECD0118BCF06F002B1E23 /* NSString+MKNetworkKitAdditions.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 5CBECC8718BCEC3D002B1E23 /* NSString+MKNetworkKitAdditions.h */; };
 		5CBECD0318BCF06F002B1E23 /* MKNetworkEngine.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 5CBECC8D18BCEC3D002B1E23 /* MKNetworkEngine.h */; };
@@ -266,6 +267,7 @@
 			dstPath = include;
 			dstSubfolderSpec = 16;
 			files = (
+				5C2DE55818C44BB300F10EA6 /* NSString+URLEncoding.h in CopyFiles */,
 				5CE76D4318BF79A50049CEDA /* BKActivityIndicator.h in CopyFiles */,
 				5CE76D4218BF797C0049CEDA /* BK.h in CopyFiles */,
 				5CE76D3E18BF78410049CEDA /* BKService.h in CopyFiles */,
@@ -768,10 +770,10 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5CBECCFE18BCF00F002B1E23 /* NSString+URLEncoding.h in Headers */,
 				5CBECCFD18BCF001002B1E23 /* OAConsumer.h in Headers */,
 				5C81975118BDF2FE00A160FB /* BKQQConnectV2OAuthView.h in Headers */,
 				5C81974D18BDF2FE00A160FB /* BKQQConnectV2.h in Headers */,
+				5CBECCFE18BCF00F002B1E23 /* NSString+URLEncoding.h in Headers */,
 				5CBECCFC18BCEFF4002B1E23 /* BKService.h in Headers */,
 				5CBECCFB18BCEFE4002B1E23 /* BK.h in Headers */,
 				5CBECCFA18BCEFD9002B1E23 /* Base64Transcoder.h in Headers */,
