@@ -1339,6 +1339,7 @@
 		5CBECBE818BCE0C5002B1E23 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				DSTROOT = /tmp/BowlKit.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "BowlKit/BowlKit-Prefix.pch";
@@ -1356,6 +1357,7 @@
 		5CBECBE918BCE0C5002B1E23 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				DSTROOT = /tmp/BowlKit.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "BowlKit/BowlKit-Prefix.pch";
@@ -1412,6 +1414,7 @@
 		5CBECC3918BCE79E002B1E23 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				DSTROOT = /tmp/BowlKit.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "BowlKit/BowlKit-Prefix.pch";
@@ -1429,6 +1432,7 @@
 		5CBECC3A18BCE79E002B1E23 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				DSTROOT = /tmp/BowlKit.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "BowlKit/BowlKit-Prefix.pch";
@@ -1446,6 +1450,7 @@
 		5CBECC4218BCE807002B1E23 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				DSTROOT = /tmp/BowlKit.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "BowlKit/BowlKit-Prefix.pch";
@@ -1463,6 +1468,7 @@
 		5CBECC4318BCE807002B1E23 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				DSTROOT = /tmp/BowlKit.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "BowlKit/BowlKit-Prefix.pch";
@@ -1480,6 +1486,7 @@
 		5CBECC5A18BCEA15002B1E23 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				DSTROOT = /tmp/BowlKit.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "BowlKit/BowlKit-Prefix.pch";
@@ -1497,6 +1504,7 @@
 		5CBECC5B18BCEA15002B1E23 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				DSTROOT = /tmp/BowlKit.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "BowlKit/BowlKit-Prefix.pch";
@@ -1514,6 +1522,7 @@
 		5CBECC6518BCEAB4002B1E23 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				DSTROOT = /tmp/BowlKit.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "BowlKit/BowlKit-Prefix.pch";
@@ -1531,6 +1540,7 @@
 		5CBECC6618BCEAB4002B1E23 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				DSTROOT = /tmp/BowlKit.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "BowlKit/BowlKit-Prefix.pch";
@@ -1548,6 +1558,7 @@
 		5CBECC7118BCEB1F002B1E23 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				DSTROOT = /tmp/BowlKit.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "BowlKit/BowlKit-Prefix.pch";
@@ -1565,6 +1576,7 @@
 		5CBECC7218BCEB1F002B1E23 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				DSTROOT = /tmp/BowlKit.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "BowlKit/BowlKit-Prefix.pch";
@@ -1582,6 +1594,7 @@
 		5CBECC7A18BCEB8A002B1E23 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				DSTROOT = /tmp/BowlKit.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "BowlKit/BowlKit-Prefix.pch";
@@ -1599,6 +1612,7 @@
 		5CBECC7B18BCEB8A002B1E23 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				DSTROOT = /tmp/BowlKit.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "BowlKit/BowlKit-Prefix.pch";
